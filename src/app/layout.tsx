@@ -1,9 +1,9 @@
 import './globals.css';
-import { Inter } from 'next/font/google';
+import { Nunito } from 'next/font/google';
 
 import Header from '@/components/Header';
 
-const inter = Inter({ subsets: ['latin'] });
+const nunito = Nunito({ weight: ['400', '600', '700'], subsets: ['cyrillic'] });
 
 export const metadata = {
   title: 'Next Travel',
@@ -16,8 +16,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en">
-      <body className={inter.className}>
+    <html lang="uk">
+      <body className={nunito.className}>
         <Header />
         {children}
       </body>

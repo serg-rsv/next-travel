@@ -1,18 +1,22 @@
 import Link from 'next/link';
 
-interface Page {
+type Page = {
   link: string;
   text: string;
-}
+};
 
 const pages: Page[] = [
   {
-    link: '/',
-    text: 'home',
+    link: '#home',
+    text: 'головна',
+  },
+  {
+    link: '#gallery',
+    text: 'галерея',
   },
   {
     link: '/contacts',
-    text: 'contacts',
+    text: 'контакти',
   },
 ];
 
@@ -22,7 +26,7 @@ export default function NavBar() {
       {pages.map(({ link, text }) => {
         return (
           <li key={link}>
-            <Link className="p-2 capitalize" href={link}>
+            <Link className="p-2 uppercase lg:text-lg" href={link}>
               {text}
             </Link>
           </li>
