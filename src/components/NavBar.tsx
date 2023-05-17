@@ -1,4 +1,5 @@
-import Link from 'next/link';
+'use client';
+import { Link } from 'react-scroll';
 
 type Page = {
   link: string;
@@ -7,16 +8,12 @@ type Page = {
 
 const pages: Page[] = [
   {
-    link: '#home',
+    link: 'home',
     text: 'головна',
   },
   {
-    link: '#gallery',
+    link: 'gallery',
     text: 'галерея',
-  },
-  {
-    link: '/contacts',
-    text: 'контакти',
   },
 ];
 
@@ -26,7 +23,12 @@ export default function NavBar() {
       {pages.map(({ link, text }) => {
         return (
           <li key={link}>
-            <Link className="p-2 uppercase lg:text-lg" href={link}>
+            <Link
+              className="inline-block p-2 uppercase lg:text-lg cursor-pointer"
+              to={link}
+              smooth={true}
+              duration={200}
+            >
               {text}
             </Link>
           </li>
