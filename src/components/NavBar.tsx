@@ -2,34 +2,34 @@
 import { Link } from 'react-scroll';
 
 type Page = {
-  link: string;
-  text: string;
+  anchor: string;
+  name: string;
 };
 
 const pages: Page[] = [
   {
-    link: 'home',
-    text: 'головна',
+    anchor: 'home',
+    name: 'головна',
   },
   {
-    link: 'gallery',
-    text: 'галерея',
+    anchor: 'gallery',
+    name: 'галерея',
   },
 ];
 
 export default function NavBar() {
   return (
     <ul className="flex justify-center gap-4">
-      {pages.map(({ link, text }) => {
+      {pages.map(({ anchor, name }) => {
         return (
-          <li key={link}>
+          <li key={anchor}>
             <Link
-              className="inline-block p-2 uppercase lg:text-lg cursor-pointer"
-              to={link}
+              className="inline-block p-2 uppercase font-bold lg:name-lg cursor-pointer"
+              to={anchor}
               smooth={true}
               duration={200}
             >
-              {text}
+              {name}
             </Link>
           </li>
         );

@@ -52,8 +52,10 @@ export default function Gallery() {
   }, []);
 
   return (
-    <section id="gallery" className="container pt-24 px-5">
-      <h2 className="mb-4 text-2xl font-bold">Цікаві місця</h2>
+    <section id="gallery" className="container py-20 px-5">
+      <h2 className="mb-12 md:mb-18 text-xl md:text-2xl font-bold text-center">
+        Цікаві місця для подорожі
+      </h2>
       <ul className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
         {places.map(({ id, img, name, location }) => {
           return (
