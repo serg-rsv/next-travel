@@ -17,6 +17,7 @@
     "autoprefixer": "10.4.14",
     "eslint": "8.40.0",
     "eslint-config-next": "13.4.2",
+    "keen-slider": "^6.8.5",
     "next": "13.4.2",
     "photoswipe": "^5.3.7",
     "postcss": "8.4.23",

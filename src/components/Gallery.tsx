@@ -68,7 +68,7 @@ export default function Gallery() {
               >
                 <figure>
                   <Image
-                    className="rounded-t-md"
+                    className="hover:contrast-125 transition-transform"
                     src={img.src}
                     width={960}
                     height={600}

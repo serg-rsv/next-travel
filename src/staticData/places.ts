@@ -91,7 +91,7 @@ const images: Place[] = [
   {
     id: 11,
     img: places011,
-    name: 'Нціональний парк Плітвіцькі Леза',
+    name: 'Плитвицькі озера',
     location: 'Хорватія',
   },
   {
