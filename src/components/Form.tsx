@@ -1,4 +1,5 @@
 import { useForm, SubmitHandler } from 'react-hook-form';
+import { toast } from 'react-hot-toast';
 
 type FormValues = {
   name: string;
@@ -17,9 +18,31 @@ export default function Form() {
     mode: 'onTouched',
   });
 
-  const onSubmit: SubmitHandler<FormValues> = (data) => {
-    console.log(data);
-    reset();
+  const onSubmit: SubmitHandler<FormValues> = async (data) => {
+    const myPromise = new Promise((resolve, reject) => {
+      setTimeout(() => {
+        const isSuccess = Math.random() > 0.5;
+
+        if (isSuccess) {
+          resolve(console.log(data));
+        } else {
+          reject(new Error('Не вдалось відправити.'));
+        }
+      }, 2000);
+    });
+
+    toast.promise(myPromise, {
+      loading: 'Надсилаю...',
+      success: 'Дані успішно надіслані!',
+      error: 'Не вдалось відправити.',
+    });
+
+    try {
+      await myPromise;
+      reset();
+    } catch (error) {
+      console.error(error);
+    }
   };
 
   return (

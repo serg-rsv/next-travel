@@ -43,7 +43,7 @@ const images: Place[] = [
   {
     id: 3,
     img: places003,
-    name: 'Нціональний парк Банфф',
+    name: 'Національний парк Банфф',
     location: 'Канада',
   },
   {
