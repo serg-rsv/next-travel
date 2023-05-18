@@ -1,3 +1,4 @@
+import { useState } from 'react';
 import { useForm, SubmitHandler } from 'react-hook-form';
 import { toast } from 'react-hot-toast';
 
@@ -9,6 +10,7 @@ type FormValues = {
 };
 
 export default function Form() {
+  const [isSubmitting, setIsSubtitling] = useState(false);
   const {
     register,
     handleSubmit,
@@ -19,6 +21,11 @@ export default function Form() {
   });
 
   const onSubmit: SubmitHandler<FormValues> = async (data) => {
+    if (isSubmitting) {
+      return;
+    }
+    setIsSubtitling(true);
+
     const myPromise = new Promise((resolve, reject) => {
       setTimeout(() => {
         const isSuccess = Math.random() > 0.5;
@@ -43,6 +50,7 @@ export default function Form() {
     } catch (error) {
       console.error(error);
     }
+    setIsSubtitling(false);
   };
 
   return (
@@ -145,10 +153,11 @@ export default function Form() {
       </div>
 
       <button
-        className="w-fit self-center px-2 py-1 text-white border border-gray-300 bg-blue-500 focus:border-blue-500 focus:outline-none focus:bg-blue-400 hover:border-blue-500 hover:bg-blue-400 rounded"
+        className="w-fit self-center px-2 py-1 text-white border border-gray-300 bg-blue-500 focus:border-blue-500 focus:outline-none focus:bg-blue-400 hover:border-blue-500 hover:bg-blue-400 rounded disabled:bg-slate-700 disabled:text-white"
         type="submit"
+        disabled={isSubmitting}
       >
-        Відправити
+        {isSubmitting ? 'Відправка...' : 'Надіслати'}
       </button>
     </form>
   );
