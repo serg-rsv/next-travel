@@ -17,7 +17,7 @@ export default function Form() {
     formState: { errors },
     reset,
   } = useForm<FormValues>({
-    mode: 'onTouched',
+    mode: 'onChange',
   });
 
   const onSubmit: SubmitHandler<FormValues> = async (data) => {
