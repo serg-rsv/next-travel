@@ -16,19 +16,17 @@ You should ensure you have dependencies installed:
 ```sh
 $ npm i
 # or
-yarn add
+$ yarn add
 ```
 
 First, run the development server:
 
 ```bash
-npm run dev
+$ npm run dev
 # or
-yarn dev
+$ yarn dev
 # or
-pnpm dev
+$ pnpm dev
 ```
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
