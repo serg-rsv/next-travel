@@ -2,7 +2,7 @@
 import { useEffect } from 'react';
 import Image from 'next/image';
 import PhotoSwipeLightbox from 'photoswipe/lightbox';
-import photoswipe from 'photoswipe';
+import PhotoSwipe from 'photoswipe';
 import 'photoswipe/style.css';
 import places from '@/staticData/places';
 
@@ -11,7 +11,7 @@ export default function Gallery() {
     let lightbox = new PhotoSwipeLightbox({
       gallery: '#gallery',
       children: 'a',
-      pswpModule: photoswipe,
+      pswpModule: PhotoSwipe,
       loop: false,
     });
     lightbox.on('uiRegister', function () {

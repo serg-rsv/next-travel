@@ -22,7 +22,7 @@ export default function NavBar() {
     <ul className="flex justify-center gap-4">
       {pages.map(({ anchor, name }) => {
         return (
-          <li key={anchor}>
+          <li key={anchor} className="hover:underline">
             <Link
               className="inline-block p-2 uppercase font-bold lg:name-lg cursor-pointer"
               to={anchor}
