@@ -7,7 +7,7 @@ export default function Hero() {
   return (
     <section id="home" className="relative h-screen w-full">
       <Image
-        className="object-cover"
+        className="object-cover object-top"
         src={heroPic}
         fill
         priority
