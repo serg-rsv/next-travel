@@ -67,7 +67,7 @@ export default function Slider() {
             width={960}
             height={600}
             loading="lazy"
-            alt={`Краєвид №${id}`}
+            alt={name}
           />
           <p className="font-bold text-sm">{name}</p>
           <p className="text-sm">{location}</p>

@@ -73,7 +73,7 @@ export default function Gallery() {
                     width={960}
                     height={600}
                     loading="lazy"
-                    alt={`Краєвид №${id}`}
+                    alt={name}
                   />
                   <figcaption>
                     <div className="p-4 rounded-b-md shadow-md" data-caption>
