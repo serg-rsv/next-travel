@@ -28,7 +28,7 @@ export default function Form() {
       className="flex flex-col w-full max-w-[400px]"
     >
       <div className="relative flex flex-col mb-5">
-        <label htmlFor="name">Ім'я</label>
+        <label htmlFor="name">Ім&apos;я</label>
         <input
           id="name"
           className={`px-2 py-1 border ${

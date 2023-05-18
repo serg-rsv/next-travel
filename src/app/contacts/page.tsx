@@ -11,7 +11,7 @@ export default function Contacts() {
       >
         Головна
       </Link>
-      <p>Форма зворотнього зв'язку</p>
+      <p>Форма зворотнього зв&apos;язку</p>
       <Form />
     </main>
   );
