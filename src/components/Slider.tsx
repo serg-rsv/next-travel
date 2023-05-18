@@ -66,6 +66,7 @@ export default function Slider() {
             src={img.src}
             width={960}
             height={600}
+            loading="lazy"
             alt={`Краєвид №${id}`}
           />
           <p className="font-bold text-sm">{name}</p>

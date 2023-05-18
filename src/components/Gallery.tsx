@@ -68,12 +68,12 @@ export default function Gallery() {
               >
                 <figure>
                   <Image
-                    className="hover:contrast-125 transition-transform"
+                    className="hover:contrast-125 rounded-t-md"
                     src={img.src}
                     width={960}
                     height={600}
                     loading="lazy"
-                    alt="Краєвид"
+                    alt={`Краєвид №${id}`}
                   />
                   <figcaption>
                     <div className="p-4 rounded-b-md shadow-md" data-caption>
