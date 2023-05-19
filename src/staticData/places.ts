@@ -1,4 +1,5 @@
 import { StaticImageData } from 'next/image';
+
 import places001 from '../../public/gallery/places-001-960x600.jpg';
 import places002 from '../../public/gallery/places-002-960x600.jpg';
 import places003 from '../../public/gallery/places-003-960x600.jpg';

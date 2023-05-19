@@ -19,21 +19,23 @@ const pages: Page[] = [
 
 export default function NavBar() {
   return (
-    <ul className="flex justify-center gap-4">
-      {pages.map(({ anchor, name }) => {
-        return (
-          <li key={anchor} className="hover:underline">
-            <Link
-              className="inline-block p-2 uppercase font-bold lg:name-lg cursor-pointer"
-              to={anchor}
-              smooth={true}
-              duration={200}
-            >
-              {name}
-            </Link>
-          </li>
-        );
-      })}
-    </ul>
+    <nav>
+      <ul className="flex justify-center gap-4">
+        {pages.map(({ anchor, name }) => {
+          return (
+            <li key={anchor} className="hover:underline">
+              <Link
+                className="inline-block p-2 uppercase font-bold lg:name-lg cursor-pointer"
+                to={anchor}
+                smooth={true}
+                duration={200}
+              >
+                {name}
+              </Link>
+            </li>
+          );
+        })}
+      </ul>
+    </nav>
   );
 }

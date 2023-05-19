@@ -1,6 +1,7 @@
-import './globals.css';
 import { Nunito } from 'next/font/google';
 import { Toaster } from 'react-hot-toast';
+
+import './globals.css';
 
 const nunito = Nunito({ weight: ['400', '600', '700'], subsets: ['cyrillic'] });
 

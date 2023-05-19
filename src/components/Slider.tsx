@@ -1,7 +1,9 @@
 'use client';
 import Image from 'next/image';
 import { useKeenSlider } from 'keen-slider/react';
+
 import 'keen-slider/keen-slider.min.css';
+
 import places from '@/staticData/places';
 
 export default function Slider() {

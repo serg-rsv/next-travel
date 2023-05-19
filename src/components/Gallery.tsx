@@ -3,7 +3,9 @@ import { useEffect } from 'react';
 import Image from 'next/image';
 import PhotoSwipeLightbox from 'photoswipe/lightbox';
 import PhotoSwipe from 'photoswipe';
+
 import 'photoswipe/style.css';
+
 import places from '@/staticData/places';
 
 export default function Gallery() {
@@ -60,15 +62,10 @@ export default function Gallery() {
         {places.map(({ id, img, name, location }) => {
           return (
             <li key={id}>
-              <a
-                href={img.src}
-                data-pswp-width="960"
-                data-pswp-height="600"
-                target="_blank"
-              >
+              <a href={img.src} data-pswp-width="960" data-pswp-height="600">
                 <figure>
                   <Image
-                    className="hover:contrast-125 rounded-t-md"
+                    className="transition duration-200 hover:contrast-125 rounded-t-md"
                     src={img.src}
                     width={960}
                     height={600}
@@ -77,7 +74,7 @@ export default function Gallery() {
                   />
                   <figcaption>
                     <div
-                      className="p-4 rounded-b-md shadow-md bg-slate-100"
+                      className="p-4 rounded-b-md shadow-md bg-slate-100 dark:shadow-blue-500"
                       data-caption
                     >
                       <p className="font-bold dark:text-black">{name}</p>

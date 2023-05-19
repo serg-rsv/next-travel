@@ -1,7 +1,9 @@
 export default function Footer() {
   return (
-    <footer className="py-4 bg-zinc-400 text-center">
-      <p>#зроблено-з-любов&apos;ю</p>
+    <footer className="bg-zinc-400">
+      <div className="container p-4 m-auto">
+        <p className="text-center">#зроблено-з-любов&apos;ю</p>
+      </div>
     </footer>
   );
 }
