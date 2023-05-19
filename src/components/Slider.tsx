@@ -69,8 +69,8 @@ export default function Slider() {
             loading="lazy"
             alt={name}
           />
-          <p className="font-bold text-sm">{name}</p>
-          <p className="text-sm">{location}</p>
+          <p className="font-bold text-sm dark:text-black">{name}</p>
+          <p className="text-sm dark:text-black">{location}</p>
         </li>
       ))}
     </ul>

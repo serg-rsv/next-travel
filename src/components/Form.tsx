@@ -64,7 +64,7 @@ export default function Form() {
           id="name"
           className={`px-2 py-1 border ${
             errors.name ? 'border-red-500' : 'border-gray-300'
-          } focus:border-blue-500 focus:outline-none rounded`}
+          } focus:border-blue-500 focus:outline-none rounded text-gray-950`}
           type="text"
           placeholder="Філеас Фоґґ"
           {...register('name', {
@@ -89,7 +89,7 @@ export default function Form() {
           id="phone"
           className={`px-2 py-1 border ${
             errors.phone ? 'border-red-500' : 'border-gray-300'
-          } focus:border-blue-500 focus:outline-none rounded`}
+          } focus:border-blue-500 focus:outline-none rounded text-gray-950`}
           type="tel"
           placeholder="+380123456789"
           {...register('phone', {
@@ -113,7 +113,7 @@ export default function Form() {
           id="email"
           className={`px-2 py-1 border ${
             errors.email ? 'border-red-500' : 'border-gray-300'
-          } focus:border-blue-500 focus:outline-none rounded`}
+          } focus:border-blue-500 focus:outline-none rounded text-gray-950`}
           type="email"
           placeholder="around@world.ua"
           {...register('email', {

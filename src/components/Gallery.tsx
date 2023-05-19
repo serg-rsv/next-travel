@@ -76,11 +76,14 @@ export default function Gallery() {
                     alt={name}
                   />
                   <figcaption>
-                    <div className="p-4 rounded-b-md shadow-md" data-caption>
-                      <p className="font-bold">{name}</p>
+                    <div
+                      className="p-4 rounded-b-md shadow-md bg-slate-100"
+                      data-caption
+                    >
+                      <p className="font-bold dark:text-black">{name}</p>
                       <div className="flex gap-1">
                         <svg
-                          className="w-5 h-5 dark:text-white"
+                          className="w-5 h-5 dark:text-black"
                           fill="none"
                           stroke="currentColor"
                           strokeWidth="1.5"
@@ -99,7 +102,7 @@ export default function Gallery() {
                             d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1115 0z"
                           ></path>
                         </svg>
-                        <p>{location}</p>
+                        <p className="dark:text-black">{location}</p>
                       </div>
                     </div>
                   </figcaption>
