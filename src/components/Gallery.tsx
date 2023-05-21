@@ -61,9 +61,14 @@ export default function Gallery() {
       <ul className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
         {places.map(({ id, img, name, location }) => {
           return (
-            <li key={id}>
-              <a href={img.src} data-pswp-width="960" data-pswp-height="600">
-                <figure>
+            <li key={id} className="grid">
+              <a
+                className="grid"
+                href={img.src}
+                data-pswp-width="960"
+                data-pswp-height="600"
+              >
+                <figure className="flex flex-col h-full">
                   <Image
                     className="transition duration-200 hover:contrast-125 rounded-t-md"
                     src={img.src}
@@ -72,9 +77,9 @@ export default function Gallery() {
                     loading="lazy"
                     alt={name}
                   />
-                  <figcaption>
+                  <figcaption className="flex flex-col flex-grow">
                     <div
-                      className="p-4 rounded-b-md shadow-md bg-slate-100 dark:shadow-blue-500"
+                      className="flex-grow p-4 rounded-b-md shadow-md bg-slate-100 dark:shadow-blue-500"
                       data-caption
                     >
                       <p className="font-bold dark:text-black">{name}</p>
