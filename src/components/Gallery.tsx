@@ -15,6 +15,7 @@ export default function Gallery() {
       children: 'a',
       pswpModule: PhotoSwipe,
       loop: false,
+      padding: { top: 20, bottom: 40, left: 20, right: 20 },
     });
     lightbox.on('uiRegister', function () {
       lightbox.pswp.ui.registerElement({
@@ -31,7 +32,6 @@ export default function Gallery() {
               const dataCaption =
                 currSlideElement.querySelector('[data-caption]');
               if (dataCaption) {
-                // get caption from element with class hidden-caption-content
                 captionHTML = dataCaption.innerHTML;
               } else {
                 // get caption from alt attribute
