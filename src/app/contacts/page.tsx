@@ -17,9 +17,11 @@ export default function Contacts() {
         </nav>
       </header>
       <main className="min-h-screen">
-        <section className="flex flex-col items-center py-20 px-5">
-          <h2>Форма зворотного зв&apos;язку</h2>
-          <Form />
+        <section>
+          <div className="flex flex-col items-center py-20 px-5">
+            <h2>Форма зворотного зв&apos;язку</h2>
+            <Form />
+          </div>
         </section>
       </main>
     </>

@@ -1,25 +1,25 @@
 import { StaticImageData } from 'next/image';
 
-import places001 from '../../public/gallery/places-001-960x600.jpg';
-import places002 from '../../public/gallery/places-002-960x600.jpg';
-import places003 from '../../public/gallery/places-003-960x600.jpg';
-import places004 from '../../public/gallery/places-004-960x600.jpg';
-import places005 from '../../public/gallery/places-005-960x600.jpg';
-import places006 from '../../public/gallery/places-006-960x600.jpg';
-import places007 from '../../public/gallery/places-007-960x600.jpg';
-import places008 from '../../public/gallery/places-008-960x600.jpg';
-import places009 from '../../public/gallery/places-009-960x600.jpg';
-import places010 from '../../public/gallery/places-010-960x600.jpg';
-import places011 from '../../public/gallery/places-011-960x600.jpg';
-import places012 from '../../public/gallery/places-012-960x600.jpg';
-import places013 from '../../public/gallery/places-013-960x600.jpg';
-import places014 from '../../public/gallery/places-014-960x600.jpg';
-import places015 from '../../public/gallery/places-015-960x600.jpg';
-import places016 from '../../public/gallery/places-016-960x600.jpg';
-import places017 from '../../public/gallery/places-017-960x600.jpg';
-import places018 from '../../public/gallery/places-018-960x600.jpg';
-import places019 from '../../public/gallery/places-019-960x600.jpg';
-import places020 from '../../public/gallery/places-020-960x600.jpg';
+import places001 from '../../public/images/gallery/places-001-960x600.jpg';
+import places002 from '../../public/images/gallery/places-002-960x600.jpg';
+import places003 from '../../public/images/gallery/places-003-960x600.jpg';
+import places004 from '../../public/images/gallery/places-004-960x600.jpg';
+import places005 from '../../public/images/gallery/places-005-960x600.jpg';
+import places006 from '../../public/images/gallery/places-006-960x600.jpg';
+import places007 from '../../public/images/gallery/places-007-960x600.jpg';
+import places008 from '../../public/images/gallery/places-008-960x600.jpg';
+import places009 from '../../public/images/gallery/places-009-960x600.jpg';
+import places010 from '../../public/images/gallery/places-010-960x600.jpg';
+import places011 from '../../public/images/gallery/places-011-960x600.jpg';
+import places012 from '../../public/images/gallery/places-012-960x600.jpg';
+import places013 from '../../public/images/gallery/places-013-960x600.jpg';
+import places014 from '../../public/images/gallery/places-014-960x600.jpg';
+import places015 from '../../public/images/gallery/places-015-960x600.jpg';
+import places016 from '../../public/images/gallery/places-016-960x600.jpg';
+import places017 from '../../public/images/gallery/places-017-960x600.jpg';
+import places018 from '../../public/images/gallery/places-018-960x600.jpg';
+import places019 from '../../public/images/gallery/places-019-960x600.jpg';
+import places020 from '../../public/images/gallery/places-020-960x600.jpg';
 
 type Place = {
   id: number;
