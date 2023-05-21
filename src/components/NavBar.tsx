@@ -28,7 +28,7 @@ export default function NavBar() {
                 className="inline-block p-2 uppercase font-bold lg:name-lg cursor-pointer"
                 to={anchor}
                 smooth={true}
-                duration={200}
+                duration={0}
               >
                 {name}
               </Link>
