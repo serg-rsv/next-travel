@@ -1,4 +1,5 @@
 'use client';
+
 import Image from 'next/image';
 import { useKeenSlider } from 'keen-slider/react';
 
@@ -12,10 +13,10 @@ export default function Slider() {
       loop: true,
       breakpoints: {
         '(min-width: 480px)': {
-          slides: { perView: 2, spacing: 5 },
+          slides: { perView: 2, spacing: 8 },
         },
         '(min-width: 768px)': {
-          slides: { perView: 3, spacing: 10 },
+          slides: { perView: 3, spacing: 16 },
         },
         '(min-width: 1024px)': {
           slides: { perView: 4, spacing: 20 },
@@ -24,7 +25,7 @@ export default function Slider() {
           slides: { perView: 6, spacing: 20 },
         },
       },
-      slides: { perView: 1 },
+      slides: { perView: 1, spacing: 8 },
     },
     [
       (slider) => {
@@ -66,8 +67,8 @@ export default function Slider() {
         >
           <Image
             src={img.src}
-            width={960}
-            height={600}
+            width={320}
+            height={200}
             loading="lazy"
             alt={name}
           />

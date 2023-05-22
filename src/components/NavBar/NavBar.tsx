@@ -1,27 +1,14 @@
 'use client';
+
 import { Link } from 'react-scroll';
 
-type Page = {
-  anchor: string;
-  name: string;
-};
-
-const pages: Page[] = [
-  {
-    anchor: 'home',
-    name: 'головна',
-  },
-  {
-    anchor: 'gallery',
-    name: 'галерея',
-  },
-];
+import anchors from './anchors';
 
 export default function NavBar() {
   return (
     <nav>
       <ul className="flex justify-center gap-4">
-        {pages.map(({ anchor, name }) => {
+        {anchors.map(({ anchor, name }) => {
           return (
             <li key={anchor} className="hover:underline">
               <Link

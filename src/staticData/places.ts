@@ -1,4 +1,4 @@
-import { StaticImageData } from 'next/image';
+import { Place } from './types';
 
 import places001 from '../../public/images/gallery/places-001-960x600.jpg';
 import places002 from '../../public/images/gallery/places-002-960x600.jpg';
@@ -20,13 +20,6 @@ import places017 from '../../public/images/gallery/places-017-960x600.jpg';
 import places018 from '../../public/images/gallery/places-018-960x600.jpg';
 import places019 from '../../public/images/gallery/places-019-960x600.jpg';
 import places020 from '../../public/images/gallery/places-020-960x600.jpg';
-
-type Place = {
-  id: number;
-  img: StaticImageData;
-  name: string;
-  location: string;
-};
 
 const images: Place[] = [
   {

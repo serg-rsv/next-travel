@@ -1,4 +1,5 @@
 'use client';
+
 import { useEffect } from 'react';
 import Image from 'next/image';
 import PhotoSwipeLightbox from 'photoswipe/lightbox';
@@ -24,7 +25,7 @@ export default function Gallery() {
         isButton: false,
         appendTo: 'root',
         html: 'Caption text',
-        onInit: (el: HTMLElement, pswp: any) => {
+        onInit: (el: HTMLElement) => {
           lightbox.pswp.on('change', () => {
             const currSlideElement = lightbox.pswp.currSlide.data.element;
             let captionHTML = '';
@@ -83,7 +84,7 @@ export default function Gallery() {
                         className="flex-grow p-4 rounded-b-md shadow-md bg-slate-100 dark:shadow-blue-500"
                         data-caption
                       >
-                        <p className="font-bold dark:text-black">{name}</p>
+                        <p className="font-bold text-black">{name}</p>
                         <div className="flex gap-1">
                           <svg
                             className="w-5 h-5 dark:text-black"
@@ -105,7 +106,7 @@ export default function Gallery() {
                               d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1115 0z"
                             ></path>
                           </svg>
-                          <p className="dark:text-black">{location}</p>
+                          <p className="text-black">{location}</p>
                         </div>
                       </div>
                     </figcaption>

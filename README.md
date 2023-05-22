@@ -1,8 +1,19 @@
 # Travel Website
 
-This repo contains the source code for the Travel website.
+<p align="center">
+![hero section](https://github.com/serg-rsv/next-travel/blob/main/assets/hero.jpg?raw=true)
+</p>
 
-## Getting Started
+This repo contains the source code for the Travel website.
+[Live page](https://rsv-next-travel.vercel.app/)
+
+## Technology Stack
+
+![Next JS](https://img.shields.io/badge/Next-black?style=for-the-badge&logo=next.js&logoColor=white) ![TypeScript](https://img.shields.io/badge/typescript-%23007ACC.svg?style=for-the-badge&logo=typescript&logoColor=white) ![TailwindCSS](https://img.shields.io/badge/tailwindcss-%2338B2AC.svg?style=for-the-badge&logo=tailwind-css&logoColor=white)
+
+## Installation
+
+Requires [Node.js](https://nodejs.org/) v16.8+ to run.
 
 In order to get started:
 
