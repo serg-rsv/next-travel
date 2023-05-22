@@ -1,7 +1,7 @@
 # Travel Website
 
 <p align="center">
-![hero section](https://github.com/serg-rsv/next-travel/blob/main/assets/hero.jpg?raw=true)
+  <img src="https://github.com/serg-rsv/next-travel/blob/main/assets/hero.jpg?raw=true" alt="hero section"/>
 </p>
 
 This repo contains the source code for the Travel website.
