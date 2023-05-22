@@ -49,3 +49,12 @@ body {
 .input-error {
   @apply absolute -bottom-5 left-0 text-red-500 text-sm;
 }
+
+/* Header */
+.header {
+  @apply fixed z-10 top-0 left-0 right-0 p-4 backdrop-blur-sm;
+}
+
+.link {
+  @apply inline-block p-2 uppercase font-bold lg:text-lg cursor-pointer hover:underline;
+}

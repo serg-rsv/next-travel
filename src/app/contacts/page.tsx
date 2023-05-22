@@ -7,12 +7,9 @@ import Form from '@/components/Form/Form';
 export default function Contacts() {
   return (
     <>
-      <header className="fixed z-10 top-0 left-0 right-0 p-4 backdrop-blur-sm">
+      <header className="header">
         <nav className="flex justify-center">
-          <Link
-            className="inline-block p-2  uppercase font-bold lg:name-lg cursor-pointer hover:underline"
-            href="/"
-          >
+          <Link className="link" href="/">
             Головна
           </Link>
         </nav>
