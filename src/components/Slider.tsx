@@ -1,10 +1,10 @@
 'use client';
 
-import Image from 'next/image';
 import { useKeenSlider } from 'keen-slider/react';
 
 import 'keen-slider/keen-slider.min.css';
 
+import Slide from '@/components/Slide';
 import places from '@/staticData/places';
 
 export default function Slider() {
@@ -61,20 +61,7 @@ export default function Slider() {
   return (
     <ul ref={sliderRef} className="keen-slider">
       {places.map(({ id, img, name, location }) => (
-        <li
-          key={id}
-          className="keen-slider__slide relative p-1 bg-white rounded"
-        >
-          <Image
-            src={img.src}
-            width={320}
-            height={200}
-            loading="lazy"
-            alt={name}
-          />
-          <p className="font-bold text-sm dark:text-black">{name}</p>
-          <p className="text-sm dark:text-black">{location}</p>
-        </li>
+        <Slide key={id} id={id} img={img} name={name} location={location} />
       ))}
     </ul>
   );

@@ -44,3 +44,8 @@ body {
   bottom: 16px;
   transform: translateX(-50%);
 }
+
+/* Styles for Form and Input */
+.input-error {
+  @apply absolute -bottom-5 left-0 text-red-500 text-sm;
+}
