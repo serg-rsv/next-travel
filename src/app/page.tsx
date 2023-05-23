@@ -1,8 +1,8 @@
-import Header from '@/components/Header';
-import Hero from '@/components/Hero';
-import TopTravels from '@/components/TopTravels';
-import Gallery from '@/components/Gallery';
-import Footer from '@/components/Footer';
+import Header from '@/sections/Header';
+import Hero from '@/sections/Hero';
+import TopTravels from '@/sections/TopTravels';
+import Gallery from '@/sections/Gallery';
+import Footer from '@/sections/Footer';
 
 export default function Home() {
   return (

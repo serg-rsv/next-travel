@@ -1,4 +1,4 @@
-import Slider from './Slider';
+import Slider from '../components/Slider';
 
 export default function TopTravels() {
   return (
