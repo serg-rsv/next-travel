@@ -56,7 +56,7 @@ export default function Gallery() {
 
   return (
     <section id="gallery">
-      <div className="container py-20 px-5">
+      <div className="container py-20 px-5 mx-auto">
         <h2 className="mb-12 md:mb-18 text-xl md:text-2xl font-bold text-center">
           Цікаві місця для подорожі
         </h2>
