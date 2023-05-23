@@ -67,6 +67,10 @@ export default function Form() {
             value: 4,
             message: 'Мінімальна довжина 4 символи',
           },
+          maxLength: {
+            value: 64,
+            message: 'Максимальна довжина 64 символи',
+          },
         })}
       />
 
@@ -94,7 +98,7 @@ export default function Form() {
         register={register('email', {
           required: "Це поле обов'язкове",
           pattern: {
-            value: /^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/,
+            value: /^[\w][\w.-]{1,62}@([\w-]+\.)+[\w-]{2,4}$/,
             message: 'Введіть дійсну електронну пошту',
           },
         })}
