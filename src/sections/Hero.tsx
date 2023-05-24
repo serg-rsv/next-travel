@@ -19,7 +19,7 @@ export default function Hero() {
           <br /> а світ безмежний
         </h1>
         <Link
-          className="self-baseline px-4 py-2 border rounded-md bg-white bg-opacity-50 hover:bg-opacity-75 text-blue-500 font-semibold md:text-lg xl:text-2xl z-[1]"
+          className="self-baseline px-4 py-2 border rounded-md bg-white bg-opacity-50 hover:bg-opacity-75 text-blue-500 font-semibold md:text-lg xl:text-2xl z-[1] transition duration-300"
           href="/contacts"
         >
           Залишити заявку

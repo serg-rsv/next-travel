@@ -118,7 +118,7 @@ export default function Form() {
       </label>
 
       <button
-        className="w-fit self-center px-2 py-1 text-white border border-gray-300 bg-blue-500 focus:border-blue-500 focus:outline-none focus:bg-blue-400 hover:border-blue-500 hover:bg-blue-400 rounded disabled:bg-slate-700 disabled:text-white"
+        className="w-fit self-center px-2 py-1 text-white border border-gray-300 bg-blue-500 focus:border-blue-500 focus:outline-none focus:bg-blue-400 hover:border-blue-500 hover:bg-blue-400 rounded disabled:bg-slate-700 disabled:text-white transition duration-300"
         type="submit"
         disabled={isSubmitting}
       >

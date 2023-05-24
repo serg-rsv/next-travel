@@ -4,7 +4,7 @@ import { Place } from '@/staticData/types';
 
 export default function GalleryCard({ img, name, location }: Place) {
   return (
-    <li className="grid">
+    <li className="grid group">
       <a
         className="grid"
         href={img.src}
@@ -13,7 +13,7 @@ export default function GalleryCard({ img, name, location }: Place) {
       >
         <figure className="flex flex-col h-full">
           <Image
-            className="transition duration-200 hover:contrast-125 rounded-t-md"
+            className="transition duration-300 group-hover:contrast-125 rounded-t-md"
             src={img.src}
             width={960}
             height={600}
