@@ -49,7 +49,7 @@ const images: Place[] = [
   {
     id: 5,
     img: places005,
-    name: 'Райдужний гора',
+    name: 'Райдужна гора',
     location: 'Вінікунка, регіон Куско, Перу',
   },
   {
