@@ -17,6 +17,7 @@ export default function Input({
         } focus:border-blue-500 focus:outline-none text-gray-950`}
         type={type}
         placeholder={placeholder}
+        autoComplete="none"
         {...register}
       />
       <label

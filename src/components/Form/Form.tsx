@@ -127,7 +127,7 @@ export default function Form() {
       </div>
 
       <button
-        className="self-center px-2 py-1 text-white transition duration-300 bg-blue-500 rounded w-fit focus:ring-2 focus:ring-blue-500 focus:outline-none focus:bg-blue-400 hover:bg-blue-400 disabled:bg-slate-700 disabled:text-white"
+        className="self-center px-2 py-1 text-white transition duration-300 bg-blue-500 rounded w-fit focus:ring-2 focus:ring-blue-500 focus:outline-none focus:bg-blue-600 hover:bg-blue-600 disabled:bg-slate-700 disabled:text-white"
         type="submit"
         disabled={isSubmitting}
       >
