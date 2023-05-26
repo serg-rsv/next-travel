@@ -12,7 +12,7 @@ export default function Input({
     <div className="relative mb-10">
       <input
         id={id}
-        className={`peer placeholder:text-transparent w-full px-2 py-1 bg-transparent border-b-2 ${
+        className={`input peer placeholder:text-transparent w-full px-2 py-1 bg-transparent border-b-2 ${
           error ? 'border-red-500' : 'border-gray-300'
         } focus:border-blue-500 focus:outline-none text-gray-950`}
         type={type}
