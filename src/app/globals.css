@@ -64,3 +64,9 @@ input:-webkit-autofill {
   transition: background-color 0s;
   transition-delay: 31536000s;
 }
+
+@media (prefers-color-scheme: dark) {
+  input:-webkit-autofill {
+    -webkit-text-fill-color: #fff;
+  }
+}
