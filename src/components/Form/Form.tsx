@@ -53,7 +53,7 @@ export default function Form() {
   return (
     <form
       onSubmit={handleSubmit(onSubmit)}
-      className="flex flex-col w-full max-w-[300px]"
+      className="flex flex-col w-full max-w-[300px] form px-5 pt-8 pb-5 rounded shadow-md"
     >
       <Input
         label="Ім'я"

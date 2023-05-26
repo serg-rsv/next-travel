@@ -59,6 +59,17 @@ body {
   @apply inline-block p-2 font-bold uppercase cursor-pointer lg:text-lg hover:underline;
 }
 
+/* Style Form */
+.form {
+  color: rgb(var(--foreground-rgb));
+  background: linear-gradient(
+      to bottom,
+      transparent,
+      rgb(var(--background-end-rgb))
+    )
+    rgb(var(--background-start-rgb));
+}
+
 /* Customization Chromium input background-color */
 input:-webkit-autofill {
   transition: background-color 0s;

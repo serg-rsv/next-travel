@@ -3,6 +3,7 @@
 import Link from 'next/link';
 
 import Form from '@/components/Form/Form';
+import VideoBg from '@/components/VideoBg/VideoBg';
 
 export default function Contacts() {
   return (
@@ -16,10 +17,12 @@ export default function Contacts() {
       </header>
       <main className="min-h-screen">
         <section>
-          <div className="flex flex-col items-center py-20 px-5">
-            <h2 className="mb-10">Форма зворотного зв&apos;язку</h2>
-            <Form />
-          </div>
+          <VideoBg>
+            <div className="flex flex-col items-center px-5 pt-20 pb-5">
+              <h2 className="mb-5">Форма зворотного зв&apos;язку</h2>
+              <Form />
+            </div>
+          </VideoBg>
         </section>
       </main>
     </>
