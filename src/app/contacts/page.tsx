@@ -17,7 +17,7 @@ export default function Contacts() {
       <main className="min-h-screen">
         <section>
           <div className="flex flex-col items-center py-20 px-5">
-            <h2>Форма зворотного зв&apos;язку</h2>
+            <h2 className="mb-10">Форма зворотного зв&apos;язку</h2>
             <Form />
           </div>
         </section>
